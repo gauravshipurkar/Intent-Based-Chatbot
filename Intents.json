@@ -1,45 +1,178 @@
-{"intents": [
-    {"tag": "greeting",
-     "patterns": ["Hi", "Hey", "What's up", "Hello", "Good day"],
-     "responses": ["Hello! how can I help you?", "Hello!", "Hi there, how can I help?","Hi!","I am a chatbot, here to help"]
-    },
-    {"tag": "goodbye",
-     "patterns": ["Bye", "See you later", "Goodbye", "Bie", "It was nice talking to you", "I'm done"],
-     "responses": ["See you later", "Until next time!", "Bye! Come back again soon", "Glad to help you!", "Have a nice day!", "Farewell!", "Sayonara!"]
-    },
-    {"tag": "thanks",
-     "patterns": ["Thanks", "Thank you", "That's helpful"],
-     "responses": ["Happy to help!", "Any time!", "My pleasure", "Thankyou so much for giving a chance to help"]
-    },
-    {"tag": "hours",
-     "patterns": ["What hours are you open?", "What are your hours?", "When are you open?","What are your functioning hours?"],
-     "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
-    },
-    {"tag": "foodtypes",
-     "patterns": ["What type of food do you serve?", "What kind of cuisine you have?", "What variety of foods you offer?" ],
-     "responses": ["We serve Mexican, Chinese and Indian food", "We have Mexican, Chinese and Indian food"]
-    },
-    {"tag": "payments",
-     "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
-     "responses": ["We accept VISA, Mastercard", "We accept most major credit cards","We are not just cash only, we accept VISA, Mastercard as well"]
-    },
-    {"tag": "opentoday",
-     "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
-     "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
-    },
-    {"tag": "menu",
-     "patterns": ["Where can I find menu?", "Where is the menu?", "How do we check the dishes?" ],
-     "responses": ["Menu page is present at the top right corner, have a look!"],
-     "context_set": "menu"
-    },
-    {"tag": "contact",
-     "patterns": ["How can I contact you?", "Contact number please?", "Phone number of the restaurent?", "How can I solve additional queries?"],
-     "responses": ["The contact number of the restaurent is 26117046"]
-    },
-    {"tag": "place",
-        "patterns": ["Where is the place?", "The address of this place?", "where is the restaurent?"],
-        "responses": ["The restaurant is at Vile-Parle(East) near station on subhash road"]
-    }
-
-]
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "What's up",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hello! how can I help you?",
+                "Hello!",
+                "Hi there, how can I help?",
+                "Hi!",
+                "I am a chatbot, here to help"
+            ]
+        },
+        {
+            "tag": "order",
+            "patterns": [
+                "I have an order",
+                "Could you take my order",
+                "I want to order food from your restaurent"
+            ],
+            "responses": [
+                "Sure sir, state your order here, it will be immediately placed",
+                "Yes sir, please mention your order, I'll convey it to the restaurent."
+            ]
+        },
+        {
+            "tag": "food",
+            "patterns": [
+                "One chicken tikka masala, two butter roti, rice, pepsi ",
+                "Tandoori chicken, chicken barbeque tacos, naan",
+                "Chicken steak, rice, dal"
+            ],
+            "responses": [
+                "Noted.",
+                "Your order will be placed in next 2 mins."
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Thankyou",
+                "Bie",
+                "It was nice talking to you",
+                "I'm done"
+            ],
+            "responses": [
+                "See you later",
+                "Until next time!",
+                "Bye! Come back again soon",
+                "Glad to help you!",
+                "Have a nice day!",
+                "Farewell!",
+                "Sayonara!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "Thankyou",
+                "That's helpful"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure",
+                "Thankyou so much for giving a chance to help"
+            ]
+        },
+        {
+            "tag": "hours",
+            "patterns": [
+                "What hours are you open?",
+                "What are your hours?",
+                "When are you open?",
+                "What are your functioning hours?"
+            ],
+            "responses": [
+                "We're open every day 9am-9pm",
+                "Our hours are 9am-9pm every day"
+            ]
+        },
+        {
+            "tag": "foodtypes",
+            "patterns": [
+                "What type of food do you serve?",
+                "What kind of cuisine you have?",
+                "What variety of foods you offer?"
+            ],
+            "responses": [
+                "We serve Mexican, Chinese and Indian food",
+                "We have Mexican, Chinese and Indian food"
+            ]
+        },
+        {
+            "tag": "payments",
+            "patterns": [
+                "Do you take credit cards?",
+                "Do you accept Mastercard?",
+                "Are you cash only?"
+            ],
+            "responses": [
+                "We accept VISA, Mastercard",
+                "We accept most major credit cards",
+                "We are not just cash only, we accept VISA, Mastercard as well"
+            ]
+        },
+        {
+            "tag": "opentoday",
+            "patterns": [
+                "Are you open today?",
+                "When do you open today?",
+                "What are your hours today?"
+            ],
+            "responses": [
+                "We're open every day from 9am-9pm",
+                "Our hours are 9am-9pm every day"
+            ]
+        },
+        {
+            "tag": "menu",
+            "patterns": [
+                "Where can I find menu?",
+                "Where is the menu?",
+                "How do we check the dishes?"
+            ],
+            "responses": [
+                "Menu page is present at the top right corner, have a look!"
+            ],
+            "context_set": "menu"
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "How can I contact you?",
+                "Contact number please?",
+                "Phone number of the restaurent?",
+                "How can I solve additional queries?"
+            ],
+            "responses": [
+                "The contact number of the restaurent is 26117046"
+            ]
+        },
+        {
+            "tag": "place",
+            "patterns": [
+                "Where is the place?",
+                "The address of this place?",
+                "where is the restaurent?"
+            ],
+            "responses": [
+                "The restaurant is at Vile-Parle(East) near station on subhash road"
+            ]
+        },
+        {
+            "tag": "bestdishes",
+            "patterns": [
+                "What are your best dishes?",
+                "What are your specialities?",
+                "what are the restaurent's best dishes?",
+                "Dishes you can suggest?"
+            ],
+            "responses": [
+                "Our specialities are Tandoori Chicken, Chicken Malai Kebab, Tacos, Tamales, Quesadillas"
+            ]
+        }
+    ]
 }
